@@ -1,3 +1,4 @@
+/*Geral*/
 :root {
     /* === Cores neutras === */
     --color-black: #000000;
@@ -24,45 +25,129 @@
     --space-xl: 2.5rem;
 }
 
-body{
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     line-height: 140%;
+    font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "REM", sans-serif;
 }
 
 /* === UTILITÁRIAS DE COR === */
 
 /* Fundo neutro */
-.bg-black { background-color: var(--color-black); }
-.bg-dark-1 { background-color: var(--color-dark-1); }
-.bg-dark-2 { background-color: var(--color-dark-2); }
-.bg-gray-1 { background-color: var(--color-gray-1); }
-.bg-gray-2 { background-color: var(--color-gray-2); }
-.bg-gray-3 { background-color: var(--color-gray-3); }
-.bg-white { background-color: var(--color-white); }
+.bg-black {
+    background-color: var(--color-black);
+}
+
+.bg-dark-1 {
+    background-color: var(--color-dark-1);
+}
+
+.bg-dark-2 {
+    background-color: var(--color-dark-2);
+}
+
+.bg-gray-1 {
+    background-color: var(--color-gray-1);
+}
+
+.bg-gray-2 {
+    background-color: var(--color-gray-2);
+}
+
+.bg-gray-3 {
+    background-color: var(--color-gray-3);
+}
+
+.bg-white {
+    background-color: var(--color-white);
+}
 
 /* Fundo vermelho */
-.bg-red-900 { background-color: var(--red-900); }
-.bg-red-700 { background-color: var(--red-700); }
-.bg-red-500 { background-color: var(--red-500); }
-.bg-red-400 { background-color: var(--red-400); }
-.bg-red-300 { background-color: var(--red-300); }
-.bg-red-200 { background-color: var(--red-200); }
+.bg-red-900 {
+    background-color: var(--red-900);
+}
+
+.bg-red-700 {
+    background-color: var(--red-700);
+}
+
+.bg-red-500 {
+    background-color: var(--red-500);
+}
+
+.bg-red-400 {
+    background-color: var(--red-400);
+}
+
+.bg-red-300 {
+    background-color: var(--red-300);
+}
+
+.bg-red-200 {
+    background-color: var(--red-200);
+}
 
 /* Texto neutro */
-.text-black { color: var(--color-black); }
-.text-dark-1 { color: var(--color-dark-1); }
-.text-dark-2 { color: var(--color-dark-2); }
-.text-gray-1 { color: var(--color-gray-1); }
-.text-gray-2 { color: var(--color-gray-2); }
-.text-gray-3 { color: var(--color-gray-3); }
-.text-white { color: var(--color-white); }
+.text-black {
+    color: var(--color-black);
+}
+
+.text-dark-1 {
+    color: var(--color-dark-1);
+}
+
+.text-dark-2 {
+    color: var(--color-dark-2);
+}
+
+.text-gray-1 {
+    color: var(--color-gray-1);
+}
+
+.text-gray-2 {
+    color: var(--color-gray-2);
+}
+
+.text-gray-3 {
+    color: var(--color-gray-3);
+}
+
+.text-white {
+    color: var(--color-white);
+}
 
 /* Texto vermelho */
-.text-red-900 { color: var(--red-900); }
-.text-red-700 { color: var(--red-700); }
-.text-red-500 { color: var(--red-500); }
-.text-red-400 { color: var(--red-400); }
-.text-red-300 { color: var(--red-300); }
-.text-red-200 { color: var(--red-200); }
+.text-red-900 {
+    color: var(--red-900);
+}
+
+.text-red-700 {
+    color: var(--red-700);
+}
+
+.text-red-500 {
+    color: var(--red-500);
+}
+
+.text-red-400 {
+    color: var(--red-400);
+}
+
+.text-red-300 {
+    color: var(--red-300);
+}
+
+.text-red-200 {
+    color: var(--red-200);
+}
