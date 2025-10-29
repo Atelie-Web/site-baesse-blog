@@ -152,6 +152,68 @@ h6 {
 .text-red-200 {
     color: var(--red-200);
 }
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+.section-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #dc3545;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 1.5rem;
+}
+.post-card {
+    background-color: #1e1e1e;
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
+}
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(220, 53, 69, 0.3) !important;
+}
+.post-img {
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 3px solid #dc3545;
+}
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+.card-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #bbbbbb;
+}
+.post-date {
+    font-size: 0.8rem;
+    color: #888;
+}
+.read-more-btn {
+    background-color: #dc3545;
+    border: none;
+    font-size: 0.85rem;
+    padding: 0.375rem 0.75rem;
+}
+.read-more-btn:hover {
+    background-color: #c82333;
+}
+.small-post .card-body {
+    padding: 1rem;
+}
+.small-post .card-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.small-post .card-text {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    }
 @media (max-width: 450px) {
     .butao-ler {
         display: none;
