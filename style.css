@@ -72,6 +72,62 @@ body{
     
     
 }
+body {
+    background-color: #171717;
+    color: white;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: #ccc;
+}
+.navbar-toggler, .btn-search-mobile {
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    background: none;
+    color: white;
+}
+.navbar-toggler:focus, .btn-search-mobile:focus {
+    box-shadow: none;
+}
+.search-collapse {
+    background-color: #171717;
+    padding: 1rem;
+    border-top: 1px solid #333;
+}
+.form-control {
+    background-color: #2a2a2a;
+    border: none;
+    color: white;
+    border-bottom: 1px solid #555;
+}
+.form-control:focus {
+    background-color: #2a2a2a;
+    color: white;
+    border-bottom-color: white;
+    box-shadow: none;
+}
+.btn-outline-success {
+    color: white;
+    border-color: white;
+}
+.btn-outline-success:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+#offcanvasMenu {
+    width: 60% !important;
+}
+
+/* Em telas muito pequenas (menos de 400px), evita ficar apertado */
+@media (max-width: 400px) {
+    #offcanvasMenu {
+        width: 75% !important; /* opcional: mais espaço em telas minúsculas */
+    }
+}
 
 @media (max-width: 380px) {
     .menu-mobile {
