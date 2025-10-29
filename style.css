@@ -1,3 +1,4 @@
+/*Geral*/
 :root {
     /* === Cores neutras === */
     --color-black: #000000;
@@ -24,45 +25,203 @@
     --space-xl: 2.5rem;
 }
 
-body{
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     line-height: 140%;
+    font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "REM", sans-serif;
 }
 
 /* === UTILITÁRIAS DE COR === */
 
 /* Fundo neutro */
-.bg-black { background-color: var(--color-black); }
-.bg-dark-1 { background-color: var(--color-dark-1); }
-.bg-dark-2 { background-color: var(--color-dark-2); }
-.bg-gray-1 { background-color: var(--color-gray-1); }
-.bg-gray-2 { background-color: var(--color-gray-2); }
-.bg-gray-3 { background-color: var(--color-gray-3); }
-.bg-white { background-color: var(--color-white); }
+.bg-black {
+    background-color: var(--color-black);
+}
+
+.bg-dark-1 {
+    background-color: var(--color-dark-1);
+}
+
+.bg-dark-2 {
+    background-color: var(--color-dark-2);
+}
+
+.bg-gray-1 {
+    background-color: var(--color-gray-1);
+}
+
+.bg-gray-2 {
+    background-color: var(--color-gray-2);
+}
+
+.bg-gray-3 {
+    background-color: var(--color-gray-3);
+}
+
+.bg-white {
+    background-color: var(--color-white);
+}
 
 /* Fundo vermelho */
-.bg-red-900 { background-color: var(--red-900); }
-.bg-red-700 { background-color: var(--red-700); }
-.bg-red-500 { background-color: var(--red-500); }
-.bg-red-400 { background-color: var(--red-400); }
-.bg-red-300 { background-color: var(--red-300); }
-.bg-red-200 { background-color: var(--red-200); }
+.bg-red-900 {
+    background-color: var(--red-900);
+}
+
+.bg-red-700 {
+    background-color: var(--red-700);
+}
+
+.bg-red-500 {
+    background-color: var(--red-500);
+}
+
+.bg-red-400 {
+    background-color: var(--red-400);
+}
+
+.bg-red-300 {
+    background-color: var(--red-300);
+}
+
+.bg-red-200 {
+    background-color: var(--red-200);
+}
 
 /* Texto neutro */
-.text-black { color: var(--color-black); }
-.text-dark-1 { color: var(--color-dark-1); }
-.text-dark-2 { color: var(--color-dark-2); }
-.text-gray-1 { color: var(--color-gray-1); }
-.text-gray-2 { color: var(--color-gray-2); }
-.text-gray-3 { color: var(--color-gray-3); }
-.text-white { color: var(--color-white); }
+.text-black {
+    color: var(--color-black);
+}
+
+.text-dark-1 {
+    color: var(--color-dark-1);
+}
+
+.text-dark-2 {
+    color: var(--color-dark-2);
+}
+
+.text-gray-1 {
+    color: var(--color-gray-1);
+}
+
+.text-gray-2 {
+    color: var(--color-gray-2);
+}
+
+.text-gray-3 {
+    color: var(--color-gray-3);
+}
+
+.text-white {
+    color: var(--color-white);
+}
 
 /* Texto vermelho */
-.text-red-900 { color: var(--red-900); }
-.text-red-700 { color: var(--red-700); }
-.text-red-500 { color: var(--red-500); }
-.text-red-400 { color: var(--red-400); }
-.text-red-300 { color: var(--red-300); }
-.text-red-200 { color: var(--red-200); }
+.text-red-900 {
+    color: var(--red-900);
+}
+
+.text-red-700 {
+    color: var(--red-700);
+}
+
+.text-red-500 {
+    color: var(--red-500);
+}
+
+.text-red-400 {
+    color: var(--red-400);
+}
+
+.text-red-300 {
+    color: var(--red-300);
+}
+
+.text-red-200 {
+    color: var(--red-200);
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #0F0F0F;
+}
+
+footer h1 {
+    font-size: var(--space-lg);
+}
+
+footer h3 {
+    font-size: var(--space-sm);
+    font-weight: 300;
+}
+
+footer section.top {
+    padding: 60px 0 54px;
+}
+
+footer section.bottom {
+    border-top: 1px solid #606060;
+    font-weight: 300;
+}
+
+footer .o-que-tenho-escutado {
+    max-width: 275px;
+}
+
+footer .o-que-tenho-escutado .musica {
+    align-items: center;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+footer .o-que-tenho-escutado .musica span {
+    min-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+footer .o-que-tenho-escutado .content-musicas {
+    gap: 0.875rem;
+}
+
+footer .license {
+    max-width: 176px;
+}
+
+footer .tags {
+    max-width: 240px;
+    box-sizing: border-box;
+}
+
+footer .tags .content-tags {
+    margin-left: 4px;
+}
+
+footer .tags a {
+    font-size: 0.75rem;
+    padding: 0.75rem;
+}
+
+@media (max-width: 576px) {
+    footer section.top {
+        padding: 32px 0 34px;
+    }
+    footer .top .container {
+        gap: 2rem;
+    }
+}
