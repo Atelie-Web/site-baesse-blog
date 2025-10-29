@@ -31,6 +31,7 @@ body {
     padding: 0;
     line-height: 140%;
     font-family: "Lato", sans-serif;
+    background-color: #000000;
 }
 
 h1,
@@ -150,4 +151,13 @@ h6 {
 
 .text-red-200 {
     color: var(--red-200);
+}
+@media (max-width: 450px) {
+    .butao-ler {
+        display: none;
+    }
+    .titulo-noticia {
+        font-size: 18px;
+        max-width: 346px;
+    }
 }
