@@ -8,7 +8,8 @@ main.single-post h1 {
 }
 
 main.single-post .content img {
-    margin-bottom: 54px;
+    margin-bottom: 3.375rem;
+    width: 100%;
 }
 
 main .content {
@@ -47,7 +48,8 @@ main .box-more-posts::-webkit-scrollbar {
 }
 
 main .comments-section textarea {
-    width: 49.75rem;
+    max-width: 49.75rem;
+    width: 100%;
     height: 9.75rem;
     padding: 24px 20px;
     align-items: flex-start;
@@ -55,4 +57,14 @@ main .comments-section textarea {
     border-radius: 12px;
     border: 1px solid var(--gray-600, #737373);
     background: var(--gray-800, #262626);
+}
+
+@media (max-width: 576px) {
+    main h1 {
+        font-size: 1.125rem;
+    }
+
+    main.single-post .content img {
+        margin-bottom: 1.5rem;
+    }
 }
