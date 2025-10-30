@@ -151,3 +151,88 @@ h6 {
 .text-red-200 {
     color: var(--red-200);
 }
+
+
+/*footer*/
+
+footer {
+    background-color: #0F0F0F;
+}
+
+footer h1 {
+    font-size: var(--space-lg);
+}
+
+footer h3 {
+    font-size: var(--space-sm);
+    font-weight: 300;
+}
+
+footer section.top {
+    padding: 3.75rem 0 3.375rem;
+}
+
+footer section.bottom {
+    border-top: 1px solid #606060;
+    font-weight: 300;
+}
+
+footer .o-que-tenho-escutado {
+    max-width: 17.1875rem;
+}
+
+footer .o-que-tenho-escutado .musica {
+    align-items: center;
+    border-radius: 0.5rem;
+    opacity: 0.9;
+}
+
+footer .o-que-tenho-escutado .musica span {
+    min-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+footer .o-que-tenho-escutado .content-musicas {
+    gap: 0.875rem;
+}
+
+footer .license {
+    max-width: 11rem;
+}
+
+footer .license small{
+    text-align: justify;
+    colo
+}
+
+footer .tags {
+    max-width: 15.625rem;
+    box-sizing: border-box;
+}
+
+footer .tags .content-tags {
+    margin-left: 0.25rem;
+}
+
+footer .tags a {
+    font-size: 0.75rem;
+    padding: 0.75rem;
+}
+
+@media (max-width: 576px) {
+    footer section.top {
+        padding: 2rem 0 2.125rem;
+    }
+    footer .top .container {
+        gap: 2rem;
+    }
+    footer .license{
+        max-width: 100%;
+    }
+    footer .license img{
+        width: 100%;
+    }
+}
