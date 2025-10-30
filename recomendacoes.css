@@ -1,0 +1,18 @@
+main,
+aside {
+    margin-top: 82px;
+}
+
+main.recomendacoes a {
+    color: white;
+}
+
+main.recomendacoes .content {
+    gap: 28px;
+}
+
+main.recomendacoes hr {
+    border: none;
+    height: 2px;
+    background: #CC4E4E;
+}

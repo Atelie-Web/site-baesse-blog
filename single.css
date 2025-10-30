@@ -12,22 +12,22 @@ main.single-post .content img {
     width: 100%;
 }
 
-main .content {
+main.single-post .content {
     border-bottom: 2px solid #B23232;
 }
 
-main .box-more-posts {
+main.single-post .box-more-posts {
     overflow-x: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
     position: relative;
 }
 
-main .box-shadow {
+main.single-post .box-shadow {
     position: relative;
 }
 
-main .box-shadow::after {
+main.single-post .box-shadow::after {
     content: "";
     display: inline-block;
     width: 119px;
@@ -39,15 +39,15 @@ main .box-shadow::after {
     z-index: 99;
 }
 
-main .item-more-post {
+main.single-post .item-more-post {
     width: min-content;
 }
 
-main .box-more-posts::-webkit-scrollbar {
+main.single-post .box-more-posts::-webkit-scrollbar {
     display: none;
 }
 
-main .comments-section textarea {
+main.single-post .comments-section textarea {
     max-width: 49.75rem;
     width: 100%;
     height: 9.75rem;
@@ -60,7 +60,7 @@ main .comments-section textarea {
 }
 
 @media (max-width: 576px) {
-    main h1 {
+    main.single-post h1 {
         font-size: 1.125rem;
     }
 
