@@ -1,5 +1,9 @@
 /*footer*/
 
+footer{
+    background-color:#0F0F0F;
+}
+
 footer h1 {
     font-size: var(--space-lg);
 }

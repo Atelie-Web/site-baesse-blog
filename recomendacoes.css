@@ -16,3 +16,9 @@ main.recomendacoes hr {
     height: 2px;
     background: #CC4E4E;
 }
+
+@media (max-width: 576px) {
+    main.recomendacoes .content {
+        gap: 0.875rem;
+    }
+}
