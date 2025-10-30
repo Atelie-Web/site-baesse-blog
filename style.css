@@ -169,7 +169,7 @@ footer h3 {
 }
 
 footer section.top {
-    padding: 60px 0 54px;
+    padding: 3.75rem 0 3.375rem;
 }
 
 footer section.bottom {
@@ -178,12 +178,12 @@ footer section.bottom {
 }
 
 footer .o-que-tenho-escutado {
-    max-width: 275px;
+    max-width: 17.1875rem;
 }
 
 footer .o-que-tenho-escutado .musica {
     align-items: center;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     opacity: 0.9;
 }
 
@@ -200,16 +200,20 @@ footer .o-que-tenho-escutado .content-musicas {
 }
 
 footer .license {
-    max-width: 176px;
+    max-width: 11rem;
+}
+
+footer .license small{
+    text-align: justify;
 }
 
 footer .tags {
-    max-width: 240px;
+    max-width: 15.625rem;
     box-sizing: border-box;
 }
 
 footer .tags .content-tags {
-    margin-left: 4px;
+    margin-left: 0.25rem;
 }
 
 footer .tags a {
@@ -219,9 +223,15 @@ footer .tags a {
 
 @media (max-width: 576px) {
     footer section.top {
-        padding: 32px 0 34px;
+        padding: 2rem 0 2.125rem;
     }
     footer .top .container {
         gap: 2rem;
+    }
+    footer .license{
+        max-width: 100%;
+    }
+    footer .license img{
+        width: 100%;
     }
 }
