@@ -1,0 +1,44 @@
+main,
+aside {
+    margin-top: 82px;
+}
+
+main.archive a {
+    color: white;
+}
+
+main.archive .item-post-tag img{
+    width: 100%;
+}
+
+main.archive .content {
+    gap: 28px;
+}
+
+main.archive .read-more-post {
+    width: max-content;
+    padding: 0.4375rem 0.875rem;
+}
+
+main.archive .item-post-tag .content-post {
+    border-bottom: 1px solid var(--gray-700, #4D4D4D);
+}
+
+main.archive h3{
+    font-size: 1.125rem;
+}
+
+main.archive .content-post {
+    min-width: 0;
+}
+
+main.archive .content-post small {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.4;
+    max-height: calc(1.4em * 3);
+}
