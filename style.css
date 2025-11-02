@@ -151,3 +151,6 @@ h6 {
 .text-red-200 {
     color: var(--red-200);
 }
+.imagem-error {
+    max-width: px;
+}
