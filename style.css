@@ -1,4 +1,4 @@
-/*Geral*/
+/* Variáveis globais */
 :root {
     /* === Cores neutras === */
     --color-black: #000000;
@@ -25,24 +25,26 @@
     --space-xl: 2.5rem;
 }
 
-body {
+/* Reset / base */
+* {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    line-height: 140%;
-    font-family: "Lato", sans-serif;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    color: white;
-    background-color: #171717;
-=======
-    background-color: #000000;
->>>>>>> origin/home
-=======
-    
->>>>>>> origin/frases
 }
 
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    font-family: "Lato", sans-serif;
+    color: var(--color-white);
+    background-color: #171717;
+}
+
+/* Tipografia */
 h1,
 h2,
 h3,
@@ -52,12 +54,11 @@ h6 {
     font-family: "REM", sans-serif;
 }
 
-p{
+p {
     margin-bottom: 0;
 }
 
 /* === UTILITÁRIAS DE COR === */
-
 /* Fundo neutro */
 .bg-black {
     background-color: var(--color-black);
@@ -166,126 +167,177 @@ p{
     color: var(--red-200);
 }
 
-main .projetos article {
-    max-width: 833px;
-}
-main .comments-section textarea {
-    max-width: 49.75rem;
-    width: 100%;
-    height: 9.75rem;
-    padding: 24px 20px;
-    align-items: flex-start;
-    flex-shrink: 0;
-    border-radius: 12px;
-    border: 1px solid var(--gray-600, #737373);
-    background: var(--gray-800, #262626);
-}
-@media (max-width:576px) {
-    img {
-        width: 100%;
-    }
-    main .projetos article p{
-        font-size: 14px;
-    }
-    main .projetos h1 {
-        font-size: 18px;
-    }
-}
-.frases {
-    background: var(--gray-800, #262626);
-    padding: 51px 66px 51px 78px;;
-    margin-bottom: 52px;
+/* Navegação / UI */
+.menu-mobile {
+    display: none;
 }
 
-.quote-card {
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 8px;
-    padding: 15px 20px;
-    margin-bottom: 20px;
+body a {
     color: white;
-    background-color: transparent;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    max-width: 700px;
-}
-.quote-avatar {
-    max-width: 60px;
-    max-height: 60px;
-    border-radius: 50%;
-    flex-shrink: 0;
-}
-.quote-text {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    
-}
-.quote-footer {
-    font-size: 0.8rem;
-    margin-top: 8px;
-    color: #bbb;
-}
-.quote-footer a {
-    color: #6cf;
     text-decoration: none;
 }
-.quote-footer a:hover {
-    text-decoration: underline;
+
+body a:hover {
+    color: #ccc;
 }
-.quote-card > div:last-child {
-    flex-shrink: 1;
-    min-width: 0; /* Essencial para que o flex item respeite o overflow-wrap */
+
+/* Botões e inputs */
+.navbar-toggler,
+.btn-search-mobile {
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    background: none;
+    color: white;
 }
-.quote-text, p {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
+
+.navbar-toggler:focus,
+.btn-search-mobile:focus {
+    box-shadow: none;
 }
-.respostas {
-    border-top: 2px solid var(--red-500);
-    max-width: 760px;
-    padding-top: 35px;
+
+.search-collapse {
+    background-color: #171717;
+    padding: 1rem;
+    border-top: 1px solid #333;
 }
+
+.form-control {
+    background-color: #2a2a2a;
+    border: none;
+    color: white;
+    border-bottom: 1px solid #555;
+}
+
+.form-control:focus {
+    background-color: #2a2a2a;
+    color: white;
+    border-bottom-color: white;
+    box-shadow: none;
+}
+
+.btn-outline-success {
+    color: white;
+    border-color: white;
+}
+
+.btn-outline-success:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* Offcanvas largura ajustável */
+#offcanvasMenu {
+    width: 60% !important;
+}
+
+@media (max-width: 400px) {
+    #offcanvasMenu {
+        width: 75% !important;
+    }
+}
+
+/* === COMPONENTES: Frases / Quotes === */
+.frases {
+    background: var(--color-dark-1);
+    padding: 51px 66px 51px 78px;
+    margin-bottom: 52px;
+    color: var(--color-white);
+}
+
+.quote-card,
 .quote-response {
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 8px;
     padding: 15px 20px;
     margin-bottom: 20px;
-    color: white;
     background-color: transparent;
     display: flex;
     gap: 15px;
     align-items: center;
     max-width: 760px;
 }
-.quantidade {
-    color: var(--gray-400, #BFBFBF);
-    
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+
+.quote-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
 }
+
+.quote-card>div:last-child,
+.quote-response>div:last-child {
+    flex-shrink: 1;
+    min-width: 0;
+    /* necessário para que overflow e truncamento funcionem em flex items */
+}
+
+.quote-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--color-white);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    /* se quiser truncar em x linhas: usar -webkit-line-clamp (opcional) */
+}
+
+/* Rodapé / meta do quote */
+.quote-footer {
+    font-size: 0.8rem;
+    margin-top: 8px;
+    color: #bbb;
+}
+
+.quote-footer a {
+    color: #6cf;
+    text-decoration: none;
+}
+
+.quote-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Respostas */
+.respostas {
+    border-top: 2px solid var(--red-500);
+    max-width: 760px;
+    padding-top: 35px;
+}
+
+/* Quantidade */
+.quantidade {
+    color: var(--color-gray-3);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Utilitários responsivos */
 @media (max-width: 570px) {
-    
     .quote-card {
         width: 260px;
         box-sizing: border-box;
     }
+
     .frases {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 24px;
     }
-    
-    .quote-card p {
+
+    .quote-card p,
+    .quote-response p {
         font-size: 10px;
     }
+
     .quantidade {
         font-size: 14px;
     }
-    .quote-response p {
-        font-size: 10px;
+
+    .menu-mobile {
+        display: flex;
     }
 }
