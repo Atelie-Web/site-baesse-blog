@@ -31,8 +31,12 @@ body {
     padding: 0;
     line-height: 140%;
     font-family: "Lato", sans-serif;
+<<<<<<< HEAD
     color: white;
     background-color: #171717;
+=======
+    background-color: #000000;
+>>>>>>> origin/home
 }
 
 h1,
@@ -156,7 +160,4 @@ p{
 
 .text-red-200 {
     color: var(--red-200);
-}
-.imagem-error {
-    max-width: px;
 }
