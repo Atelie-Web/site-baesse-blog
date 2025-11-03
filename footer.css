@@ -1,9 +1,5 @@
 /*footer*/
 
-footer{
-    background-color:#0F0F0F;
-}
-
 footer h1 {
     font-size: var(--space-lg);
 }
@@ -63,7 +59,7 @@ footer .tags .content-tags {
 
 footer .tags a {
     font-size: 0.75rem;
-    padding: 0.375rem;
+    padding: 0.75rem;
 }
 
 @media (max-width: 576px) {
