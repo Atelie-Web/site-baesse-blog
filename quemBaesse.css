@@ -1,0 +1,19 @@
+.sobre {
+    border-bottom: 2px solid var(--red-700)
+}
+.quem h1{
+    margin-bottom: 60px;
+}
+@media (max-width:400px) {
+    .quem h1{
+        font-size: 18px;
+        margin-bottom: 21px;
+    }
+    .quem article p {
+        font-size: 14px;
+    }
+    .quem .sobre h3 {
+        font-size: 16px;
+    }
+
+}
