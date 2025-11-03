@@ -1,0 +1,38 @@
+.musicalidade img {
+    width: 100%;
+}
+
+.item-musica-date {
+    border-radius: 8px;
+    border: 1px solid #505D68;
+    width: 13.375rem;
+    margin: 0 auto 0;
+}
+
+.box-date-musical .box-musical {
+    gap: 4.5rem;
+}
+
+main .comments-section textarea {
+    max-width: 49.75rem;
+    width: 100%;
+    height: 9.75rem;
+    padding: 24px 20px;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid var(--gray-600, #737373);
+    background: var(--gray-800, #262626);
+}
+
+section.mais-escutados{
+    max-width: 47rem;
+}
+
+section.mais-escutados img{
+    width: 100%;
+}   
+
+.comments-section{
+    margin:7.5rem 0 11.25rem;
+}
