@@ -417,8 +417,14 @@ h1 {
     padding: 51px 66px 51px 78px;
     margin-bottom: 52px;
     color: var(--color-white);
+    
+    overflow: hidden;
+    position: relative;
 }
-
+.quote-card {
+    max-width: 100%;
+    box-sizing: border-box;
+}
 .quote-card,
 .quote-response {
     border: 1px solid rgba(255, 255, 255, 0.25);
@@ -874,16 +880,24 @@ footer .tags a {
     }
 
     .frases {
+        align-self: center;
+        margin: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 24px;
     }
-
+    .respostas {
+        display: flex;
+        flex-direction: column;
+    }
     .quote-card p,
     .quote-response p {
+        
+        
         font-size: 10px;
+        margin: 0;
     }
 
     .quantidade {
