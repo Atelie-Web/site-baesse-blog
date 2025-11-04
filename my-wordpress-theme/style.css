@@ -1,0 +1,48 @@
+/*
+Theme Name: My WordPress Theme
+Theme URI: http://example.com/my-wordpress-theme
+Author: Your Name
+Author URI: http://example.com
+Description: A custom WordPress theme for showcasing content.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: my-wordpress-theme
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
+a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer {
+    background-color: #fff;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}

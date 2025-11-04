@@ -1,0 +1,47 @@
+/* 
+Theme Name: My WordPress Theme
+Description: A custom WordPress theme with styles for the block editor.
+Version: 1.0
+Author: Your Name
+*/
+
+body {
+    font-family: "Lato", sans-serif;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "REM", sans-serif;
+}
+
+a {
+    color: #0073aa;
+}
+
+a:hover {
+    color: #005177;
+}
+
+blockquote {
+    border-left: 4px solid #0073aa;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: #555;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button, input[type="submit"] {
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #005177;
+}
