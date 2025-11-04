@@ -1,28 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html <?php language_attributes(); ?>>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!--custom css-->
-    <link rel="stylesheet" href="style.css">
-    <!--awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=REM:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
     <title>PBAESSE</title>
+    <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+
 
     <header class="container py-3">
         <div class="d-flex justify-content-between align-items-center">
@@ -32,12 +20,12 @@
 
 
             <nav class="d-none d-lg-flex align-items-center gap-4">
-                <a href="index.html">HOME</a>
-                <a href="musicalidade.html">MÚSICAS</a>
-                <a href="frases.html">FRASES</a>
-                <a href="projetos.html">PROJETOS</a>
-                <a href="quemBaesse.html">QUEM É BAESSE</a>
-                <a href="recomendacoes.html">RECOMENDAÇÕES</a>
+                <a href="<?php echo esc_url( home_url('/') ); ?>">HOME</a>
+                <a href="<?php echo esc_url( home_url('/musicalidade/') ); ?>">MÚSICAS</a>
+                <a href="<?php echo esc_url( home_url('/frases/') ); ?>">FRASES</a>
+                <a href="<?php echo esc_url( home_url('/projetos/') ); ?>">PROJETOS</a>
+                <a href="<?php echo esc_url( home_url('/quemBaesse/') ); ?>">QUEM É BAESSE</a>
+                <a href="<?php echo esc_url( home_url('/recomendacoes/') ); ?>">RECOMENDAÇÕES</a>
                 <a href="#contato">CONTATO</a>
             </nav>
 
@@ -87,18 +75,14 @@
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="musicalidade.html">MÚSICAS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="frases.html">FRASES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projetos.html">PROJETOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="quemBaesse.html">QUEM É BAESSE</a></li>
-                    <li class="nav-item"><a class="nav-link" href="recomendacoes.html">RECOMENDAÇÕES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo esc_url( home_url('/') ); ?>">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo esc_url( home_url('/musicalidade/') ); ?>">MÚSICAS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo esc_url( home_url('/frases/') ); ?>">FRASES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo esc_url( home_url('/projetos/') ); ?>">PROJETOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo esc_url( home_url('/quemBaesse/') ); ?>">QUEM É BAESSE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo esc_url( home_url('/recomendacoes/') ); ?>">RECOMENDAÇÕES</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato">CONTATO</a></li>
                 </ul>
             </div>
         </div>
     </header>
-
-</body>
-
-</html>
