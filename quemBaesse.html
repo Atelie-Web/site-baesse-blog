@@ -1,15 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="quemBaesse.css">
 </head>
+
 <body class="bg-black">
-    <main>
-        <section class="text-white container quem">
+    <header class="container py-3">
+        <div class="d-flex justify-content-between align-items-center">
+
+
+            <h2 class="m-0">PBAESSE</h2>
+
+
+            <nav class="d-none d-lg-flex align-items-center gap-4">
+                <a href="#">HOME</a>
+                <a href="#">MÚSICAS</a>
+                <a href="#">FRASES</a>
+                <a href="#">PROJETOS</a>
+                <a href="#">QUEM É BAESSE</a>
+                <a href="#">RECOMENDAÇÕES</a>
+                <a href="#">CONTATO</a>
+            </nav>
+
+
+            <form class="d-none d-md-flex align-items-center gap-2">
+                <input type="search" class="form-control form-control-sm"
+                    style="width: 150px; border: none; border-bottom: 1px solid white; background: transparent; color: white;"
+                    placeholder="Buscar...">
+                <button type="submit" class="btn btn-link text-white p-0">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+
+            <div class="d-flex d-lg-none gap-2 align-items-center">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                    aria-controls="offcanvasMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+
+                <button class="btn btn-search-mobile" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mobileSearch" aria-expanded="false" aria-controls="mobileSearch">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="collapse w-100 mt-2" id="mobileSearch">
+            <div class="search-collapse">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">OK</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasMenu"
+            aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Fechar"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">MÚSICAS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">FRASES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">PROJETOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">QUEM É BAESSE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">RECOMENDAÇÕES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTATO</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="container row m-auto d-flex justify-content-between">
+        <section class="text-white quem col-8">
             <h1 class="text-center fw-semibold">
                 Quem é Baesse
             </h1>
@@ -21,23 +101,38 @@
                     Edição de 08 de Junho de 2016
                 </p>
                 <p>
-                    pBaesse ainda é Pedro Baesse Alves Pereira. Um natalense, que continua vivendo na maravilhosa Cidade do Sol.
+                    pBaesse ainda é Pedro Baesse Alves Pereira. Um natalense, que continua vivendo na maravilhosa Cidade
+                    do Sol.
                 </p>
-                
+
                 <p>
-                    Ele estudou, passou no concurso e se tornou professor de Sistemas de Informação no IFRN! Com muito orgulho, pois ele concluiu o ensino médio nessa instituição, ainda quando ela se chamava CEFET-RN, e também concluiu o ensino superior em Tecnologia em Análise e Desenvolvimento de Sistemas quando se transformou em IFRN. Acabou não terminando administração e focou suas suas pós-graduações em Gerenciamento de Projeto. Atualmente atua no Campus Ceará-Mirim e quer se engajar muito mais com seu Campus e com o IFRN.
-                </p>
-                <p>
-                    pBaesse também é um ser humano, emprendedor da vida, fotográfo (ele gosta de se chamar assim), defensor do software livre, um pirata brasileiro, blogeuiro bem casual, protetor do meio ambiente e mozillian.
-                </p>
-                <p>
-                    Ele ainda quer praticar Kite Surf. Jardinar mais (sim é um verbo! Mas se fosse um neologismo também seria usado. pBaesse também é muito fã disso). Realmente se dedicar mais em fotografia. Voltar a jogar RPG, mais jogos de tabuleiro e jogos virtuais. Se engajar mais com causas sociais, politicas e ambientais. Rever mais seus amigos. Viajar mais. Se dedicar mais para a música, discotecando e quem sabe virar um DJ por hobby. E comprar uma moto custom. Mas como pode se ver, ele não vai se limitar a isso.
-                </p>
-                <p>
-                    Esse link tem todas as redes sociais de pBaesse e para entrar em contato basta usar o formulário ou no site das redes sociais mesmo.
+                    Ele estudou, passou no concurso e se tornou professor de Sistemas de Informação no IFRN! Com muito
+                    orgulho, pois ele concluiu o ensino médio nessa instituição, ainda quando ela se chamava CEFET-RN, e
+                    também concluiu o ensino superior em Tecnologia em Análise e Desenvolvimento de Sistemas quando se
+                    transformou em IFRN. Acabou não terminando administração e focou suas suas pós-graduações em
+                    Gerenciamento de Projeto. Atualmente atua no Campus Ceará-Mirim e quer se engajar muito mais com seu
+                    Campus e com o IFRN.
                 </p>
                 <p>
-                    OBS: pBaesse ainda acha legal escrever na terceira pessoa e notou que isso aqui precisava ser atualizado 
+                    pBaesse também é um ser humano, emprendedor da vida, fotográfo (ele gosta de se chamar assim),
+                    defensor do software livre, um pirata brasileiro, blogeuiro bem casual, protetor do meio ambiente e
+                    mozillian.
+                </p>
+                <p>
+                    Ele ainda quer praticar Kite Surf. Jardinar mais (sim é um verbo! Mas se fosse um neologismo também
+                    seria usado. pBaesse também é muito fã disso). Realmente se dedicar mais em fotografia. Voltar a
+                    jogar RPG, mais jogos de tabuleiro e jogos virtuais. Se engajar mais com causas sociais, politicas e
+                    ambientais. Rever mais seus amigos. Viajar mais. Se dedicar mais para a música, discotecando e quem
+                    sabe virar um DJ por hobby. E comprar uma moto custom. Mas como pode se ver, ele não vai se limitar
+                    a isso.
+                </p>
+                <p>
+                    Esse link tem todas as redes sociais de pBaesse e para entrar em contato basta usar o formulário ou
+                    no site das redes sociais mesmo.
+                </p>
+                <p>
+                    OBS: pBaesse ainda acha legal escrever na terceira pessoa e notou que isso aqui precisava ser
+                    atualizado 
                 </p>
             </article>
             <article style="max-width: 902px;">
@@ -45,20 +140,130 @@
                     Edição de 22 Junho de 2011
                 </p>
                 <p>
-                    pBaesse é Pedro Baesse Alves Pereira. Ele é natural de Natal, a Cidade do Sol, no Rio Grande do Norte. Até hoje continua vivendo nessa capital na ponta do Brasil.
+                    pBaesse é Pedro Baesse Alves Pereira. Ele é natural de Natal, a Cidade do Sol, no Rio Grande do
+                    Norte. Até hoje continua vivendo nessa capital na ponta do Brasil.
                 </p>
                 <p>
-                    Ele ocupa seu tempo estudando para concursos e também cursa Administração pela UFRN. É graduado em Tecnologia em Análise e Desenvolvimento de Sistemas pelo IFRN. Também ministra aulas de inglês/dinamarquês. Ele é um empreendedor/socializador nas horas vagas.
+                    Ele ocupa seu tempo estudando para concursos e também cursa Administração pela UFRN. É graduado em
+                    Tecnologia em Análise e Desenvolvimento de Sistemas pelo IFRN. Também ministra aulas de
+                    inglês/dinamarquês. Ele é um empreendedor/socializador nas horas vagas.
                 </p>
                 <p>
-                    Ele disponibiliza o email pbaesse [@] gmail.com para qualquer dúvida, sugestão, crítica ou só pra bater papo mesmo.
+                    Ele disponibiliza o email pbaesse [@] gmail.com para qualquer dúvida, sugestão, crítica ou só pra
+                    bater papo mesmo.
                 </p>
                 <p>
                     Ele não tem a mania de escrever na terceira pessoa, mas achou pareceu interessante.
                 </p>
             </article>
         </section>
+        <aside class="col-3 text-white d-none d-sm-block">
+            <h3 class="mb-4">Recomendação Musical</h3>
+            <div class="content-musicas d-flex flex-column mb-4">
+                <div class="musica d-flex p-2 bg-red-900">
+                    <span>Música lorem ipsum loremMúsica lorem ipsum lorem</span>
+                    <i class="fa-solid fa-music"></i>
+                </div>
+                <div class="musica d-flex p-2 bg-red-900">
+                    <span>Música lorem ipsum loremMúsica lorem ipsum lorem</span>
+                    <i class="fa-solid fa-music"></i>
+                </div>
+                <div class="musica d-flex p-2 bg-red-900">
+                    <span>Música lorem ipsum loremMúsica lorem ipsum lorem</span>
+                    <i class="fa-solid fa-music"></i>
+                </div>
+            </div>
+            <p class="mb-4">Gosto de tal e tal músicas esses são os meus estilos musicais e bla bla bla lorem lorem
+                lorem lorem lorem lorem lorem lorem.</p>
+            <div class="posts">
+                <h3>Posts recentes</h3>
+                <div class="box-post d-flex flex-column gap-1">
+                    <p class="post">Gosto de tal e tal músicas esses são os meus estilos musicais e bla bla bla
+                        lorem lorem lorem lorem lorem lorem lorem lorem.</p>
+                    <p class="post">Gosto de tal e tal músicas esses são os meus estilos musicais e bla bla bla
+                        lorem lorem lorem lorem lorem lorem lorem lorem.</p>
+                    <p class="post">Gosto de tal e tal músicas esses são os meus estilos musicais e bla bla bla
+                        lorem lorem lorem lorem lorem lorem lorem lorem.</p>
+                </div>
+            </div>
+        </aside>
     </main>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <footer class="text-white">
+        <section class="top">
+            <div class="container d-flex justify-content-between align-items-center flex-wrap px-4 px-sm-0">
+                <div class="links-site pb-3">
+                    <h1 class="fw-normal">PBAESSE</h1>
+                    <div class="links-content d-flex flex-column gap-2">
+                        <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 text-white">Home</a>
+                        <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 text-white">Músicas</a>
+                        <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 text-white">Frases</a>
+                        <a href="#"
+                            class="link-offset-2 link-underline link-underline-opacity-0 text-white">Projetos</a>
+                        <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 text-white">Quem É
+                            Baesse</a>
+                        <a href="#"
+                            class="link-offset-2 link-underline link-underline-opacity-0 text-white">Recomendações</a>
+                        <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 text-white">Contato</a>
+                    </div>
+                </div>
+                <div class="o-que-tenho-escutado">
+                    <h3 class="text-uppercase mb-4">O que eu tenho escutado</h3>
+                    <div class="content-musicas d-flex flex-column">
+                        <div class="musica d-flex p-2 bg-red-900">
+                            <span>Música lorem ipsum loremMúsica lorem ipsum lorem</span>
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                        <div class="musica d-flex p-2 bg-red-900">
+                            <span>Música lorem ipsum loremMúsica lorem ipsum lorem</span>
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                        <div class="musica d-flex p-2 bg-red-900">
+                            <span>Música lorem ipsum loremMúsica lorem ipsum lorem</span>
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="license d-flex flex-column align-items-center gap-3 gap-sm-5">
+                    <small class="text-gray-3">lorem lorem lorem lorem lore lofep lorem ipsum lorem ipsum loeme</small>
+                    <img src="imgs/creative.svg" alt="creative commons">
+                </div>
+                <div class="tags">
+                    <h3>TAGS</h3>
+                    <div class="content-tags row gap-2">
+                        <a href="" class="btn bg-red-900 text-white col">Ambiente</a>
+                        <a href="" class="btn bg-red-900 text-white col">Ambiente</a>
+                        <a href="" class="btn bg-red-900 text-white col">Ambiente</a>
+                        <a href="" class="btn bg-red-900 text-white col">Ambiente</a>
+                        <a href="" class="btn bg-red-900 text-white col">Ambiente</a>
+                        <a href="" class="btn bg-red-900 text-white col">Ambiente</a>
+                        <a href="" class="btn bg-red-900 text-white col">Ambiente</a>
+                        <a href="" class="btn bg-red-900 text-white col">Ambiente</a>
+                        <a href="" class="btn bg-red-900 text-white col">Ambiente</a>
+                        <a href="" class="btn bg-red-900 text-white col">Ambiente</a>
+                        <a href="" class="btn bg-red-900 text-white col">Ambiente</a>
+                        <a href="" class="btn bg-red-900 text-white col">Ambiente</a>
+                        <a href="" class="btn bg-red-900 text-white col">Ambiente</a>
+                        <a href="" class="btn bg-red-900 text-white col">Ambiente</a>
+                        <a href="" class="btn bg-red-900 text-white col">Ambiente</a>
+                        <a href="" class="btn bg-red-900 text-white col">Ambiente</a>
+                        <a href="" class="btn bg-red-900 text-white col">Ambiente</a>
+                        <a href="" class="btn bg-red-900 text-white col">Ambiente</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottom pt-3 pb-3 pb-sm-5">
+            <div class="container">
+                <p class="d-flex justify-content-between">
+                    <small>Terms and conditions</small>
+                    <small>©2018 - Form | All right reserved</small>
+                </p>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
