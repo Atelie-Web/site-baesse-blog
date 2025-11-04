@@ -151,3 +151,34 @@ h6 {
 .text-red-200 {
     color: var(--red-200);
 }
+.form-container {
+    background-color: #2c3034;
+    max-width: 698px;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.form-control, .form-control:focus {
+    background-color: #1a1d20;
+    border: 1px solid #343a40;
+    color: #f8f9fa;
+}
+.form-control::placeholder {
+    color: #6c757d;
+}
+.btn-submit {
+    background-color: #dc3545;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    font-weight: 500;
+}
+.btn-submit:hover {
+    background-color: #bb2d3b;
+}
+.butao-enviar {
+    justify-self: end;
+}
