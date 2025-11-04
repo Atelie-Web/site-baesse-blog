@@ -104,7 +104,7 @@
             </h2>
             <article class="row g-4"> <!-- Row obrigatório -->
                 <figure class="col-lg-7"> <!-- Use col-lg-8 em vez de g-col-8 -->
-                    <img src="assets/img/Rectangle 1.png" class="img-fluid" alt="Imagem do artigo">
+                    <img src="imgs/Rectangle 1.png" class="img-fluid" alt="Imagem do artigo">
                 </figure>
                 <div style="grid-template-columns: 1fr 1fr;" class="d-flex flex-column gap-8 col-lg-5">
                     <!-- Use col-lg-4 -->
@@ -139,7 +139,7 @@
         <div class="box-gradiente" style="margin-bottom: 120px;">
             <div class="box-recents-posts d-flex gap-4">
                 <div class="item-post d-flex gap-3 text-white">
-                    <img src="assets/img/img_post.png" alt="">
+                    <img src="imgs/img_post.png" alt="">
                     <div class="content-item-post">
                         <h4 class="mb-4 fw-normal fs-6">Como instalar o Linux e ser mais feliz</h4>
                         <p class="text-gray-3">É muito melhor desenvolver usando o Linux (sou também desenvolvedor de
@@ -154,7 +154,7 @@
                     </div>
                 </div>
                 <div class="item-post d-flex gap-3 text-white">
-                    <img src="assets/img/img_post.png" alt="">
+                    <img src="imgs/img_post.png" alt="">
                     <div class="content-item-post">
                         <h4 class="mb-4 fw-normal fs-6">Como instalar o Linux e ser mais feliz</h4>
                         <p class="text-gray-3">É muito melhor desenvolver usando o Linux (sou também desenvolvedor de
@@ -169,7 +169,7 @@
                     </div>
                 </div>
                 <div class="item-post d-flex gap-3 text-white">
-                    <img src="assets/img/img_post.png" alt="">
+                    <img src="imgs/img_post.png" alt="">
                     <div class="content-item-post">
                         <h4 class="mb-4 fw-normal fs-6">Como instalar o Linux e ser mais feliz</h4>
                         <p class="text-gray-3">É muito melhor desenvolver usando o Linux (sou também desenvolvedor de
@@ -184,7 +184,7 @@
                     </div>
                 </div>
                 <div class="item-post d-flex gap-3 text-white">
-                    <img src="assets/img/img_post.png" alt="">
+                    <img src="imgs/img_post.png" alt="">
                     <div class="content-item-post">
                         <h4 class="mb-4 fw-normal fs-6">Como instalar o Linux e ser mais feliz</h4>
                         <p class="text-gray-3">É muito melhor desenvolver usando o Linux (sou também desenvolvedor de
@@ -199,7 +199,7 @@
                     </div>
                 </div>
                 <div class="item-post d-flex gap-3 text-white">
-                    <img src="assets/img/img_post.png" alt="">
+                    <img src="imgs/img_post.png" alt="">
                     <div class="content-item-post">
                         <h4 class="mb-4 fw-normal fs-6">Como instalar o Linux e ser mais feliz</h4>
                         <p class="text-gray-3">É muito melhor desenvolver usando o Linux (sou também desenvolvedor de
@@ -214,7 +214,7 @@
                     </div>
                 </div>
                 <div class="item-post d-flex gap-3 text-white">
-                    <img src="assets/img/img_post.png" alt="">
+                    <img src="imgs/img_post.png" alt="">
                     <div class="content-item-post">
                         <h4 class="mb-4 fw-normal fs-6">Como instalar o Linux e ser mais feliz</h4>
                         <p class="text-gray-3">É muito melhor desenvolver usando o Linux (sou também desenvolvedor de
@@ -229,7 +229,7 @@
                     </div>
                 </div>
                 <div class="item-post d-flex gap-3 text-white">
-                    <img src="assets/img/img_post.png" alt="">
+                    <img src="imgs/img_post.png" alt="">
                     <div class="content-item-post">
                         <h4 class="mb-4 fw-normal fs-6">Como instalar o Linux e ser mais feliz</h4>
                         <p class="text-gray-3">É muito melhor desenvolver usando o Linux (sou também desenvolvedor de

@@ -102,7 +102,7 @@
             <article class="frases" style="max-width: 755px;">
                 <div class="">
                     <div class="quote-card">
-                        <img src="assets/img/baesse.png" alt="Avatar" class="quote-avatar" />
+                        <img src="imgs/baesse.png" alt="Avatar" class="quote-avatar" />
                         <div>
                             <p>
                                 “Nós Aceitamos O Amor Que Achamos Que Merecemos”“Nós Aceitamos O Amor Que Achamos Que
@@ -116,7 +116,7 @@
                     </div>
 
                     <div class="quote-card">
-                        <img src="assets/img/baesse.png" alt="Avatar" class="quote-avatar" />
+                        <img src="imgs/baesse.png" alt="Avatar" class="quote-avatar" />
                         <div>
                             <p>
                                 “Nós Aceitamos O Amor Que Achamos Que Merecemos”“Nós Aceitamos O Amor Que Achamos Que
@@ -130,7 +130,7 @@
                     </div>
 
                     <div class="quote-card">
-                        <img src="assets/img/baesse.png" alt="Avatar" class="quote-avatar" />
+                        <img src="imgs/baesse.png" alt="Avatar" class="quote-avatar" />
                         <div>
                             <p>
                                 “Nós Aceitamos O Amor Que Achamos Que Merecemos”“Nós Aceitamos O Amor Que Achamos Que
@@ -144,7 +144,7 @@
                     </div>
 
                     <div class="quote-card">
-                        <img src="assets/img/baesse.png" alt="Avatar" class="quote-avatar" />
+                        <img src="imgs/baesse.png" alt="Avatar" class="quote-avatar" />
                         <div>
                             <p>
                                 “Nós Aceitamos O Amor Que Achamos Que Merecemos”“Nós Aceitamos O Amor Que Achamos Que
@@ -158,7 +158,7 @@
                     </div>
 
                     <div class="quote-card">
-                        <img src="assets/img/baesse.png" alt="Avatar" class="quote-avatar" />
+                        <img src="imgs/baesse.png" alt="Avatar" class="quote-avatar" />
                         <div>
                             <p>
                                 “Nós Aceitamos O Amor Que Achamos Que Merecemos”“Nós Aceitamos O Amor Que Achamos Que
@@ -177,7 +177,7 @@
                     1 Responses to Pensamentos Significativos (Frases)
                 </p>
                 <div class="quote-response">
-                    <img src="assets/img/baesse.png" alt="Avatar" class="quote-avatar" />
+                    <img src="imgs/baesse.png" alt="Avatar" class="quote-avatar" />
                     <div>
                         <p>
                             “Nós Aceitamos O Amor Que Achamos Que Merecemos”“Nós Aceitamos O Amor Que Achamos Que

@@ -104,7 +104,7 @@
             </h1>
             <article style="margin-bottom: 150px;">
                 <figure>
-                    <img src="assets/img/projeto.png" alt="" class="">
+                    <img src="imgs/projeto.png" alt="" class="">
                 </figure>
                 <p style="margin-bottom: 10px;">
                     Projetos FreeWare ou Código-Aberto que planejo, que já apoiei ou apoio financeiramente (não quer

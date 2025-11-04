@@ -100,7 +100,7 @@
     <main>
         <section class="d-flex justify-content-center" style="padding:100px;">
             <figure>
-                <img src="assets/img/error.png" alt="" class="imagem-error">
+                <img src="imgs/error.png" alt="" class="imagem-error">
             </figure>
         </section>
     </main>
