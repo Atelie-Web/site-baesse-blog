@@ -530,11 +530,11 @@ h1 {
     content: "";
     display: inline-block;
     width: 119px;
-    height: 95%;
+    height: 100%;
     background: linear-gradient(89deg, rgba(0, 0, 0, 0.00) -3.37%, #000 126.93%);
     position: absolute;
     top: 0;
-    right: 0;
+    right: 15px;
     z-index: 99;
 }
 
@@ -949,4 +949,28 @@ footer .tags a {
     .pesquisa {
         display: none;
     }
+}
+
+.item-post img {
+    width: 260px !important;
+    height: 221px !important;
+    object-fit: cover;
+    display: block;
+}
+
+.item-more-post img {
+    width: 264px !important;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-more-post h4 a {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* número de linhas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 3.2em; /* opcional: ajuda a manter a altura uniforme */
+    line-height: 1.6em;
 }

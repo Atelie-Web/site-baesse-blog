@@ -79,9 +79,9 @@
                     <li class="nav-item"><a class="nav-link" href="<?php echo esc_url( home_url('/musicalidade/') ); ?>">MÚSICAS</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?php echo esc_url( home_url('/frases/') ); ?>">FRASES</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?php echo esc_url( home_url('/projetos/') ); ?>">PROJETOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?php echo esc_url( home_url('/quemBaesse/') ); ?>">QUEM É BAESSE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo esc_url( home_url('/sobre/') ); ?>">QUEM É BAESSE</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?php echo esc_url( home_url('/recomendacoes/') ); ?>">RECOMENDAÇÕES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contato">CONTATO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo esc_url( home_url('/contato/') ); ?>">CONTATO</a></li>
                 </ul>
             </div>
         </div>

@@ -1,221 +1,186 @@
 <?php get_header(); ?>
-    <main class="container py-5"> <!-- Container obrigatório -->
-        <section class="text-white" style="margin-bottom: 120px;">
-            <h2 class="text-center">
-                Devaneios de uma mente sem limites
-            </h2>
-            <article class="row g-4"> <!-- Row obrigatório -->
-                <figure class="col-lg-7"> <!-- Use col-lg-8 em vez de g-col-8 -->
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/imgs/Rectangle 1.png' ); ?>" class="img-fluid" alt="Imagem do artigo">
-                </figure>
-                <div style="grid-template-columns: 1fr 1fr;" class="d-flex flex-column gap-8 col-lg-5">
-                    <!-- Use col-lg-4 -->
-                    <h3 class="titulo-noticia" style="max-width: 440px;">
-                        Da Desilusão à Radicalização: Como Jovens Desorientados São Manipulados pelo Neoliberalismo
+<main class="container"> <!-- Container obrigatório -->
+    <section class="text-white" style="margin-bottom: 120px;">
+        <h2 class="text-center mb-5">
+            Devaneios de uma mente sem limites
+        </h2>
+        <article class="row g-4 align-items-start mb-5">
+            <!-- Imagem do post -->
+            <figure class="col-lg-7">
+                <?php if (has_post_thumbnail()) : ?>
+                    <?php the_post_thumbnail('large', ['class' => 'img-fluid w-100 rounded', 'alt' => get_the_title()]); ?>
+                <?php else : ?>
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/imgs/Rectangle 1.png'); ?>"
+                        class="img-fluid w-100 rounded"
+                        alt="Imagem padrão">
+                <?php endif; ?>
+            </figure>
+
+            <!-- Conteúdo -->
+            <div class="col-lg-5 d-flex flex-column justify-content-between">
+                <div>
+                    <h3 class="titulo-noticia mb-4">
+                        <a href="<?php the_permalink(); ?>" class="text-decoration-none text-white">
+                            <?php the_title(); ?>
+                        </a>
                     </h3>
-                    <p style="max-width: 440px; margin-bottom: 20px;">
-                        Tradução do fio de George Monbiot. Links abaixo: Fio original Thread Reader PDF Como e por que
-                        os motins racistas aconteceram, e o que eles nos dizem sobre o rumo que podemos estar tomando?
-                        Este tópico diz respeito a uma parte da resposta, a formação do que o historiador Arno Meyer
-                        chamou de um “estrato…
+
+                    <p class="mb-4">
+                        <?php echo wp_trim_words(get_the_excerpt(), 40, '...'); ?>
                     </p>
-                    <div class="d-flex justify-content-between border-top"
-                        style="padding-top:5px ; margin-bottom: 30px;">
-                        <div>
+                </div>
+
+                <!-- Info e botão -->
+                <div>
+                    <div class="d-flex justify-content-between border-top pt-2 mb-3">
+                        <div class="d-flex gap-2">
                             <i class="fa-regular fa-heart text-danger"></i>
                             <i class="fa-regular fa-comment-dots"></i>
                         </div>
                         <div>
                             <i class="fa-regular fa-calendar"></i>
-                            <span>
-                                10/05/18
-                            </span>
+                            <span><?php echo get_the_date(); ?></span>
                         </div>
                     </div>
-                    <button class="btn btn-danger butao-ler" style="max-width: 167px; padding: 12px;">
-                        <a href="single.html" class="text-white text-decoration-none">READ MORE </a>
-                    </button>
-                </div>
-            </article>
-        </section>
-        <div class="box-gradiente" style="margin-bottom: 120px;">
-            <div class="box-recents-posts d-flex gap-4">
-                <div class="item-post d-flex gap-3 text-white">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/imgs/img_post.png' ); ?>" alt="">
-                    <div class="content-item-post">
-                        <h4 class="mb-4 fw-normal fs-6">Como instalar o Linux e ser mais feliz</h4>
-                        <p class="text-gray-3">É muito melhor desenvolver usando o Linux (sou também desenvolvedor de
-                            sistemas :D), ou simplesmente usar o Linux para atividades cotidianas é melhor. Algo que
-                            deve ficar claro é que tudo o que você já faz hoje no windows vai fazer ainda melhor no
-                            Linux. Se ainda não foi o bastante, dê uma olhada nas 10 vantagens de usar o Linux que vão
-                            deixar você mais feliz para sempre logo depois das instruções de instalação.</p>
-                        <div class="item-post-bottom d-flex justify-content-between align-items-center border-top pt-2">
-                            <small class="saber-mais text-red-700">Saber mais</small>
-                            <small class="date fw-light">19/02/20</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-post d-flex gap-3 text-white">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/imgs/img_post.png' ); ?>" alt="">
-                    <div class="content-item-post">
-                        <h4 class="mb-4 fw-normal fs-6">Como instalar o Linux e ser mais feliz</h4>
-                        <p class="text-gray-3">É muito melhor desenvolver usando o Linux (sou também desenvolvedor de
-                            sistemas :D), ou simplesmente usar o Linux para atividades cotidianas é melhor. Algo que
-                            deve ficar claro é que tudo o que você já faz hoje no windows vai fazer ainda melhor no
-                            Linux. Se ainda não foi o bastante, dê uma olhada nas 10 vantagens de usar o Linux que vão
-                            deixar você mais feliz para sempre logo depois das instruções de instalação.</p>
-                        <div class="item-post-bottom d-flex justify-content-between align-items-center border-top pt-2">
-                            <small class="saber-mais text-red-700">Saber mais</small>
-                            <small class="date fw-light">19/02/20</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-post d-flex gap-3 text-white">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/imgs/img_post.png' ); ?>" alt="">
-                    <div class="content-item-post">
-                        <h4 class="mb-4 fw-normal fs-6">Como instalar o Linux e ser mais feliz</h4>
-                        <p class="text-gray-3">É muito melhor desenvolver usando o Linux (sou também desenvolvedor de
-                            sistemas :D), ou simplesmente usar o Linux para atividades cotidianas é melhor. Algo que
-                            deve ficar claro é que tudo o que você já faz hoje no windows vai fazer ainda melhor no
-                            Linux. Se ainda não foi o bastante, dê uma olhada nas 10 vantagens de usar o Linux que vão
-                            deixar você mais feliz para sempre logo depois das instruções de instalação.</p>
-                        <div class="item-post-bottom d-flex justify-content-between align-items-center border-top pt-2">
-                            <small class="saber-mais text-red-700">Saber mais</small>
-                            <small class="date fw-light">19/02/20</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-post d-flex gap-3 text-white">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/imgs/img_post.png' ); ?>" alt="">
-                    <div class="content-item-post">
-                        <h4 class="mb-4 fw-normal fs-6">Como instalar o Linux e ser mais feliz</h4>
-                        <p class="text-gray-3">É muito melhor desenvolver usando o Linux (sou também desenvolvedor de
-                            sistemas :D), ou simplesmente usar o Linux para atividades cotidianas é melhor. Algo que
-                            deve ficar claro é que tudo o que você já faz hoje no windows vai fazer ainda melhor no
-                            Linux. Se ainda não foi o bastante, dê uma olhada nas 10 vantagens de usar o Linux que vão
-                            deixar você mais feliz para sempre logo depois das instruções de instalação.</p>
-                        <div class="item-post-bottom d-flex justify-content-between align-items-center border-top pt-2">
-                            <small class="saber-mais text-red-700">Saber mais</small>
-                            <small class="date fw-light">19/02/20</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-post d-flex gap-3 text-white">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/imgs/img_post.png' ); ?>" alt="">
-                    <div class="content-item-post">
-                        <h4 class="mb-4 fw-normal fs-6">Como instalar o Linux e ser mais feliz</h4>
-                        <p class="text-gray-3">É muito melhor desenvolver usando o Linux (sou também desenvolvedor de
-                            sistemas :D), ou simplesmente usar o Linux para atividades cotidianas é melhor. Algo que
-                            deve ficar claro é que tudo o que você já faz hoje no windows vai fazer ainda melhor no
-                            Linux. Se ainda não foi o bastante, dê uma olhada nas 10 vantagens de usar o Linux que vão
-                            deixar você mais feliz para sempre logo depois das instruções de instalação.</p>
-                        <div class="item-post-bottom d-flex justify-content-between align-items-center border-top pt-2">
-                            <small class="saber-mais text-red-700">Saber mais</small>
-                            <small class="date fw-light">19/02/20</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-post d-flex gap-3 text-white">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/imgs/img_post.png' ); ?>" alt="">
-                    <div class="content-item-post">
-                        <h4 class="mb-4 fw-normal fs-6">Como instalar o Linux e ser mais feliz</h4>
-                        <p class="text-gray-3">É muito melhor desenvolver usando o Linux (sou também desenvolvedor de
-                            sistemas :D), ou simplesmente usar o Linux para atividades cotidianas é melhor. Algo que
-                            deve ficar claro é que tudo o que você já faz hoje no windows vai fazer ainda melhor no
-                            Linux. Se ainda não foi o bastante, dê uma olhada nas 10 vantagens de usar o Linux que vão
-                            deixar você mais feliz para sempre logo depois das instruções de instalação.</p>
-                        <div class="item-post-bottom d-flex justify-content-between align-items-center border-top pt-2">
-                            <small class="saber-mais text-red-700">Saber mais</small>
-                            <small class="date fw-light">19/02/20</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-post d-flex gap-3 text-white">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/imgs/img_post.png' ); ?>" alt="">
-                    <div class="content-item-post">
-                        <h4 class="mb-4 fw-normal fs-6">Como instalar o Linux e ser mais feliz</h4>
-                        <p class="text-gray-3">É muito melhor desenvolver usando o Linux (sou também desenvolvedor de
-                            sistemas :D), ou simplesmente usar o Linux para atividades cotidianas é melhor. Algo que
-                            deve ficar claro é que tudo o que você já faz hoje no windows vai fazer ainda melhor no
-                            Linux. Se ainda não foi o bastante, dê uma olhada nas 10 vantagens de usar o Linux que vão
-                            deixar você mais feliz para sempre logo depois das instruções de instalação.</p>
-                        <div class="item-post-bottom d-flex justify-content-between align-items-center border-top pt-2">
-                            <small class="saber-mais text-red-700">Saber mais</small>
-                            <small class="date fw-light">19/02/20</small>
-                        </div>
-                    </div>
+
+                    <a href="<?php the_permalink(); ?>" class="btn btn-danger text-white px-4 py-2 butao-ler"
+                        style="max-width: 167px;">
+                        READ MORE
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <h2 class="section-title">PRINCIPAIS POSTS</h2>
-
-            <div class="row">
+        </article>
 
 
-                <div class="col-lg-6 mb-4">
-                    <div class="main-post">
-                        <img src="https://i.postimg.cc/0jK1vJ8M/mooji-guru-smile.jpg" alt="Monge Mooji">
-                        <h3 class="card-title">Armadilhas Do Ego – Ano Novo, Um Tempo De Reflexão</h3>
-                        <p class="card-text">
-                            Já que acabamos de entrar em um novo ano, vamos aproveitar para refletir um pouco. Li um
-                            texto que me fez refletir e acredito que seja útil para todos. O texto é “Armadilhas do Ego”
-                            do Monge Mooji:
-                            <br><em>“Se você acha que é mais ‘espiritual’ andar de bicicleta ou usar transporte público
-                                p...</em>
-                        </p>
-                        <div class="post-meta">
-                            <span>
-                                <i class="bi bi-heart heart" data-id="1"></i>
-                                <span class="like-count ms-1">0</span>
-                            </span>
-                            <span><i class="bi bi-calendar3"></i> 10/05/18</span>
+    </section>
+    <div class="box-gradiente" style="margin-bottom: 120px;">
+        <div class="box-recents-posts d-flex gap-5">
+            <?php
+            $recent_posts = new WP_Query(array(
+                'posts_per_page' => 6,
+                'post_status'    => 'publish'
+            ));
+
+            if ($recent_posts->have_posts()) :
+                while ($recent_posts->have_posts()) : $recent_posts->the_post();
+            ?>
+                    <div class="item-post item-post-home-recent d-flex gap-3 text-white">
+                        <?php if (has_post_thumbnail()) : ?>
+                            <a href="<?php the_permalink(); ?>">
+                                <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="<?php the_title_attribute(); ?>">
+                            </a>
+                        <?php else : ?>
+                            <a href="<?php the_permalink(); ?>">
+                                <img src="<?php echo esc_url(get_template_directory_uri() . '/imgs/img_post.png'); ?>" alt="Imagem padrão">
+                            </a>
+                        <?php endif; ?>
+
+                        <div class="content-item-post">
+                            <h4 class="mb-4 fw-normal fs-6">
+                                <a href="<?php the_permalink(); ?>" class="text-white text-decoration-none">
+                                    <?php the_title(); ?>
+                                </a>
+                            </h4>
+                            <p class="text-gray-3">
+                                <?php echo wp_trim_words(get_the_excerpt(), 40, '...'); ?>
+                            </p>
+                            <div class="item-post-bottom d-flex justify-content-between align-items-center border-top pt-2">
+                                <a href="<?php the_permalink(); ?>" class="saber-mais text-red-700">
+                                    <small>Saber mais</small>
+                                </a>
+                                <small class="date fw-light"><?php echo get_the_date('d/m/y'); ?></small>
+                            </div>
                         </div>
-                        <a href="single.html" class="btn read-more-btn">READ MORE</a>
                     </div>
-                </div>
-
-
-                <div class="col-lg-6">
-
-
-                    <div class="small-post">
-                        <h6 class="card-title">12 Motivos Para Você Usar O Firefox Agora</h6>
-                        <p class="card-text">
-                            12 motivos para você usar o Firefox agora. Entenda porque ele deve ser a sua escolha na
-                            batalha pela proteção da sua privacidade e garanta que internet esteja aberta e saudável!
-                            Certeza que tem muita coisa que você nem faz ideia. 1- Firefox tem um desempenho melhor,
-                            seja em uso de...
-                        </p>
-                        <div class="post-date">10/05/18</div>
-                    </div>
-
-
-                    <div class="small-post">
-                        <h6 class="card-title">5 Podcasts Que Escuto Semanalmente E Que Você Já Deveria Conhecer</h6>
-                        <p class="card-text">
-                            5 podcasts que escuto semanalmente e que você já deveria conhecer!Segue o fio!?????? —
-                            Baessando 03/07 ?????? (episódio) July 10, 2021 Sempre me interessei por economia e
-                            principalmente por geopolítica. Por isso adoro o @Bertin_Junior! Com tu...
-                        </p>
-                        <div class="post-date">10/05/18</div>
-                    </div>
-
-
-                    <div class="small-post">
-                        <h6 class="card-title">Revisão Do Plano Diretor De Natal: Como Está Ocorrendo?</h6>
-                        <p class="card-text">
-                            Revisão do plano diretor de Natal: processo atropelado (trator e sem o tempo necessário para
-                            uma boa construção) sem participação popular real. Menos 300 pessoas realmente estão
-                            envolvidas. Participe e todos os envolvidos. Não quer o pior programa da população de Natal
-                            é isso?? Nada. Tudo isso aceito pelo prefeito de Natal e provável ca...
-                        </p>
-                        <div class="post-date">10/05/18</div>
-                    </div>
-
-                </div>
-            </div>
+            <?php
+                endwhile;
+                wp_reset_postdata();
+            else :
+                echo '<p class="text-white">Nenhum post encontrado.</p>';
+            endif;
+            ?>
         </div>
+    </div>
+    <div class="container">
+        <h2 class="section-title">PRINCIPAIS POSTS</h2>
 
-    </main>
+        <div class="row">
+
+            <?php
+            // Query para o post principal (mais recente)
+            $main_post = new WP_Query(array(
+                'posts_per_page' => 1
+            ));
+
+            if ($main_post->have_posts()) :
+                while ($main_post->have_posts()) : $main_post->the_post();
+            ?>
+                    <div class="col-lg-6 mb-4">
+                        <div class="main-post">
+                            <?php if (has_post_thumbnail()) : ?>
+                                <img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'large')); ?>" alt="<?php the_title_attribute(); ?>">
+                            <?php else : ?>
+                                <img src="<?php echo esc_url(get_template_directory_uri() . '/imgs/default.jpg'); ?>" alt="Imagem padrão">
+                            <?php endif; ?>
+
+                            <h3 class="card-title">
+                                <a href="<?php the_permalink(); ?>" class="text-decoration-none text-white">
+                                    <?php the_title(); ?>
+                                </a>
+                            </h3>
+
+                            <p class="card-text">
+                                <?php echo wp_trim_words(get_the_excerpt(), 50, '...'); ?>
+                            </p>
+
+                            <div class="post-meta">
+                                <span>
+                                    <i class="bi bi-heart heart" data-id="<?php the_ID(); ?>"></i>
+                                    <span class="like-count ms-1">0</span>
+                                </span>
+                                <span><i class="bi bi-calendar3"></i> <?php echo get_the_date('d/m/y'); ?></span>
+                            </div>
+
+                            <a href="<?php the_permalink(); ?>" class="btn read-more-btn">READ MORE</a>
+                        </div>
+                    </div>
+            <?php
+                endwhile;
+                wp_reset_postdata();
+            endif;
+            ?>
+
+            <div class="col-lg-6">
+                <?php
+                // Query para os 3 próximos posts
+                $small_posts = new WP_Query(array(
+                    'posts_per_page' => 3,
+                    'offset' => 1
+                ));
+
+                if ($small_posts->have_posts()) :
+                    while ($small_posts->have_posts()) : $small_posts->the_post();
+                ?>
+                        <div class="small-post mb-4">
+                            <h6 class="card-title mb-2">
+                                <a href="<?php the_permalink(); ?>" class="text-decoration-none text-white">
+                                    <?php the_title(); ?>
+                                </a>
+                            </h6>
+                            <p class="card-text mb-1">
+                                <?php echo wp_trim_words(get_the_excerpt(), 40, '...'); ?>
+                            </p>
+                            <div class="post-date text-muted"><?php echo get_the_date('d/m/y'); ?></div>
+                        </div>
+                <?php
+                    endwhile;
+                    wp_reset_postdata();
+                endif;
+                ?>
+            </div>
+
+        </div>
+    </div>
+
+</main>
 <?php get_footer(); ?>
