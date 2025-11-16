@@ -1,16 +1,16 @@
 <?php get_header(); ?>
 <main class="container"> <!-- Container obrigatório -->
     <section class="text-white" style="margin-bottom: 120px;">
-        <h2 class="text-center mb-5">
+        <h1 class="text-center mb-5">
             Devaneios de uma mente sem limites
-        </h2>
+        </h1>
         <article class="row g-4 align-items-start mb-5">
             <!-- Imagem do post -->
             <figure class="col-lg-7">
                 <?php if (has_post_thumbnail()) : ?>
                     <?php the_post_thumbnail('large', ['class' => 'img-fluid w-100 rounded', 'alt' => get_the_title()]); ?>
                 <?php else : ?>
-                    <img src="<?php echo esc_url(get_template_directory_uri() . '/imgs/Rectangle 1.png'); ?>"
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/imgs/img-more-post.png'); ?>"
                         class="img-fluid w-100 rounded"
                         alt="Imagem padrão">
                 <?php endif; ?>
@@ -19,11 +19,11 @@
             <!-- Conteúdo -->
             <div class="col-lg-5 d-flex flex-column justify-content-between">
                 <div>
-                    <h3 class="titulo-noticia mb-4">
+                    <h2 class="titulo-noticia mb-4">
                         <a href="<?php the_permalink(); ?>" class="text-decoration-none text-white">
                             <?php the_title(); ?>
                         </a>
-                    </h3>
+                    </h2>
 
                     <p class="mb-4">
                         <?php echo wp_trim_words(get_the_excerpt(), 40, '...'); ?>
@@ -71,7 +71,7 @@
                             </a>
                         <?php else : ?>
                             <a href="<?php the_permalink(); ?>">
-                                <img src="<?php echo esc_url(get_template_directory_uri() . '/imgs/img_post.png'); ?>" alt="Imagem padrão">
+                                <img src="<?php echo esc_url(get_template_directory_uri() . '/imgs/img-more-post.png'); ?>" alt="Imagem padrão">
                             </a>
                         <?php endif; ?>
 
@@ -120,7 +120,7 @@
                             <?php if (has_post_thumbnail()) : ?>
                                 <img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'large')); ?>" alt="<?php the_title_attribute(); ?>">
                             <?php else : ?>
-                                <img src="<?php echo esc_url(get_template_directory_uri() . '/imgs/default.jpg'); ?>" alt="Imagem padrão">
+                                <img src="<?php echo esc_url(get_template_directory_uri() . '/imgs/img-more-post.png'); ?>" alt="Imagem padrão">
                             <?php endif; ?>
 
                             <h3 class="card-title">
@@ -138,7 +138,7 @@
                                     <i class="bi bi-heart heart" data-id="<?php the_ID(); ?>"></i>
                                     <span class="like-count ms-1">0</span>
                                 </span>
-                                <span><i class="bi bi-calendar3"></i> <?php echo get_the_date('d/m/y'); ?></span>
+                                <span class="text-white"><i class="bi bi-calendar3"></i> <?php echo get_the_date('d/m/y'); ?></span>
                             </div>
 
                             <a href="<?php the_permalink(); ?>" class="btn read-more-btn">READ MORE</a>
@@ -170,7 +170,7 @@
                             <p class="card-text mb-1">
                                 <?php echo wp_trim_words(get_the_excerpt(), 40, '...'); ?>
                             </p>
-                            <div class="post-date text-muted"><?php echo get_the_date('d/m/y'); ?></div>
+                            <div class="post-date text-white"><?php echo get_the_date('d/m/y'); ?></div>
                         </div>
                 <?php
                     endwhile;

@@ -1,3 +1,19 @@
+/*
+Theme Name: Baesse Theme Blog
+Theme URI: https://blog.pbaesse.net/theme
+Author: Ateliê Web
+Author URI: https://blog.pbaesse.net/
+Description: Tema personalizado para o site Baesse, focado em música, projetos e conteúdo criativo. Design moderno com paleta de cores vermelha e preta.
+Version: 1.0.0
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: baesse-theme
+Domain Path: /languages
+Tags: blog, custom-colors, custom-menu, featured-images, translation-ready, music, projects
+*/
+
 /* ============================================
    VARIÁVEIS GLOBAIS
    ============================================ */
@@ -32,11 +48,6 @@
    ============================================ */
 * {
     box-sizing: border-box;
-}
-
-html,
-body {
-    height: 100%;
 }
 
 body {
@@ -82,12 +93,16 @@ h6 {
 
 h1 {
     margin-bottom: 44px;
+    font-size: 1.75rem;
+}
+
+h2{
+    font-size: 1.5rem;
 }
 
 /* ============================================
-   UTILITÁRIAS DE COR
+   UTILITÁRIAS DE COR - FUNDOS
    ============================================ */
-/* Fundos neutros */
 .bg-black {
     background-color: var(--color-black);
 }
@@ -116,7 +131,6 @@ h1 {
     background-color: var(--color-white);
 }
 
-/* Fundos vermelhos */
 .bg-red-900 {
     background-color: var(--red-900);
 }
@@ -141,7 +155,9 @@ h1 {
     background-color: var(--red-200);
 }
 
-/* Textos neutros */
+/* ============================================
+   UTILITÁRIAS DE COR - TEXTOS
+   ============================================ */
 .text-black {
     color: var(--color-black);
 }
@@ -158,9 +174,7 @@ h1 {
     color: var(--color-gray-1);
 }
 
-.text-gray-2 {
-    color: var(--color-gray-2);
-}
+
 
 .text-gray-3 {
     color: var(--color-gray-3);
@@ -170,7 +184,6 @@ h1 {
     color: var(--color-white);
 }
 
-/* Textos vermelhos */
 .text-red-900 {
     color: var(--red-900);
 }
@@ -222,7 +235,6 @@ h1 {
     border-top: 1px solid #333;
 }
 
-/* Offcanvas Menu */
 #offcanvasMenu {
     width: 60% !important;
 }
@@ -330,9 +342,7 @@ h1 {
     cursor: pointer;
 }
 
-/* Post Principal */
 .main-post {
-    background: #111;
     padding: 1.5rem;
     border-radius: 8px;
     height: 100%;
@@ -374,7 +384,6 @@ h1 {
     margin-bottom: 0.75rem;
 }
 
-/* Post Pequeno */
 .small-post {
     background: transparent;
     padding: 1rem 0;
@@ -502,8 +511,8 @@ h1 {
     align-items: flex-start;
     flex-shrink: 0;
     border-radius: 12px;
-    border: 1px solid var(--gray-600, #737373);
-    background: var(--gray-800, #262626);
+    border: 1px solid var(--color-gray-1);
+    background: var(--color-dark-1);
 }
 
 /* ============================================
@@ -531,10 +540,10 @@ h1 {
     display: inline-block;
     width: 119px;
     height: 100%;
-    background: linear-gradient(89deg, rgba(0, 0, 0, 0.00) -3.37%, #000 126.93%);
+    background: linear-gradient(89deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.4) 60%, #000 100%);
     position: absolute;
     top: 0;
-    right: 15px;
+    right: 0;
     z-index: 99;
 }
 
@@ -549,7 +558,7 @@ h1 {
     right: 0;
     width: 100px;
     height: 100%;
-    background: linear-gradient(84deg, rgba(23, 23, 23, 0.00) 4.51%, #171717 95.49%);
+    background: linear-gradient(89deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.4) 60%, #000 100%);
     pointer-events: none;
     z-index: 1;
 }
@@ -581,20 +590,40 @@ h1 {
     width: min-content;
 }
 
+.item-post img {
+    width: 260px !important;
+    height: 221px !important;
+    object-fit: cover;
+    display: block;
+}
+
+.item-more-post img {
+    width: 264px !important;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-more-post h4 a {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 3.2em;
+    line-height: 1.6em;
+}
+
 /* ============================================
    LAYOUT: MAIN E ASIDE
    ============================================ */
 main,
 aside {
-    margin-top: 82px;
+    margin-top: 5.125rem;
 }
 
 main .content {
     border-bottom: 2px solid var(--red-700);
-}
-
-main .projetos article {
-    max-width: 833px;
 }
 
 main.single-post h1 {
@@ -606,7 +635,6 @@ main.single-post .content img {
     width: 100%;
 }
 
-/* Sidebar */
 aside {
     max-width: 275px;
 }
@@ -638,115 +666,11 @@ aside .post {
 }
 
 /* ============================================
-   PÁGINAS ESPECÍFICAS: SINGLE POST
-   ============================================ */
-main.single-post .content {
-    border-bottom: 2px solid var(--red-700);
-}
-
-/* ============================================
-   PÁGINAS ESPECÍFICAS: RECOMENDAÇÕES
-   ============================================ */
-main.recomendacoes a {
-    color: var(--color-white);
-}
-
-main.recomendacoes .content {
-    gap: 28px;
-}
-
-main.recomendacoes hr {
-    border: none;
-    height: 2px;
-    background: #CC4E4E;
-}
-
-/* ============================================
-   PÁGINAS ESPECÍFICAS: ARCHIVE
-   ============================================ */
-main.archive a {
-    color: var(--color-white);
-}
-
-main.archive .content {
-    gap: 28px;
-}
-
-main.archive h3 {
-    font-size: 1.125rem;
-}
-
-main.archive .item-post-tag img {
-    width: 100%;
-}
-
-main.archive .read-more-post {
-    width: max-content;
-    padding: 0.4375rem 0.875rem;
-}
-
-main.archive .item-post-tag .content-post {
-    border-bottom: 1px solid var(--gray-700, #4D4D4D);
-}
-
-main.archive .content-post {
-    min-width: 0;
-}
-
-main.archive .content-post small {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    line-height: 1.4;
-    max-height: calc(1.4em * 3);
-}
-
-/* ============================================
-   PÁGINAS ESPECÍFICAS: QUEM SOU EU
-   ============================================ */
-.sobre {
-    border-bottom: 2px solid var(--red-700);
-}
-
-.quem h1 {
-    margin-bottom: 60px;
-}
-
-/* ============================================
-   PÁGINAS ESPECÍFICAS: MUSICALIDADE
-   ============================================ */
-.musicalidade img {
-    width: 100%;
-}
-
-.item-musica-date {
-    border-radius: 8px;
-    border: 1px solid #505D68;
-    width: 13.375rem;
-    margin: 0 auto 0;
-}
-
-.box-date-musical .box-musical {
-    gap: 4.5rem;
-}
-
-section.mais-escutados {
-    max-width: 47rem;
-}
-
-section.mais-escutados img {
-    width: 100%;
-}
-
-/* ============================================
    FOOTER
    ============================================ */
-footer h1 {
-    font-size: var(--space-lg);
+
+footer {
+    background-color: #0F0F0F !important;
 }
 
 footer h3 {
@@ -807,14 +731,21 @@ footer .tags a {
     padding: 0.75rem;
 }
 
-/* ============================================
-   UTILITÁRIOS
-   ============================================ */
-.imagem-error {
-    max-width: 168px;
+/* Para qualquer widget Last.fm */
+table[class*="lfmWidget"] {
+    width: 100% !important;
+    max-width: 100% !important;
 }
 
-/* Utilitários específicos - estilos aplicados via media queries */
+table[class*="lfmWidget"] object {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+table[class*="lfmWidget"] .lfmFoot table {
+    width: 100% !important;
+    max-width: 100% !important;
+}
 
 /* ============================================
    MEDIA QUERIES
@@ -835,18 +766,6 @@ footer .tags a {
 
     main.single-post .content img {
         margin-bottom: 1.5rem;
-    }
-
-    main .projetos article p {
-        font-size: 14px;
-    }
-
-    main .projetos h1 {
-        font-size: 18px;
-    }
-
-    main.recomendacoes .content {
-        gap: 0.875rem;
     }
 
     footer section.top {
@@ -912,19 +831,6 @@ footer .tags a {
     #offcanvasMenu {
         width: 75% !important;
     }
-
-    .quem h1 {
-        font-size: 18px;
-        margin-bottom: 21px;
-    }
-
-    .quem article p {
-        font-size: 14px;
-    }
-
-    .quem .sobre h3 {
-        font-size: 16px;
-    }
 }
 
 /* Breakpoint: 380px (Mobile Ultra Pequeno) */
@@ -951,26 +857,24 @@ footer .tags a {
     }
 }
 
-.item-post img {
-    width: 260px !important;
-    height: 221px !important;
-    object-fit: cover;
-    display: block;
+/* ============================================
+   AJUSTES IMPORTANTES
+   ============================================ */
+
+table[class*="lfmWidget"] .lfmHead {
+    width: 100% !important;
+    height: auto !important;
 }
 
-.item-more-post img {
-    width: 264px !important;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
+nav a{
+    font-size: 0.875rem;
 }
 
-.item-more-post h4 a {
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* número de linhas */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-height: 3.2em; /* opcional: ajuda a manter a altura uniforme */
-    line-height: 1.6em;
+header a:hover, footer a:hover {
+    color: var(--red-400) !important;
+    transition: all 0.5s;
+}
+
+.read-more-post-white{
+    color: var(--color-white) !important;
 }
